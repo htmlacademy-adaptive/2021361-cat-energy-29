@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Кэт энерджи</title>
+    <style>
+      .nutrition-concept__point {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: #68b738;
+      }
+
+      .nutrition-concept__point::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .nutrition-concept__point--natural::after {
+        background-image: url("./img/icon-leaf.svg");
+      }
+
+      .nutrition-concept__point--powdered::after {
+        background-image: url("./img/icon-cap.svg");
+      }
+
+      .nutrition-concept__point--substituted::after {
+        background-image: url("./img/icon-eat.svg");
+      }
+
+      .nutrition-concept__point--fast::after {
+        background-image: url("./img/icon-clock.svg");
+      }
+    </style>
+    <base href="https://htmlacademy-adaptive.github.io/2021361-cat-energy-29/2/">
+</head>
+  <body>
+    <header>
+      <a href="./index.html" aria-current="page">
+        <img
+          src="./img/logo-mobile.svg"
+          width="33"
+          height="38"
+          alt="Логотип интернет-магазина еды для кошек."
+        />
+      </a>
+      <img
+        src="./img/logo-shop-name-mobile.svg"
+        width="101"
+        height="18"
+        alt="Cat energy - интернет-магазин еды для кошек."
+      />
+      <nav>
+        <ul>
+          <li><a href="./index.html" aria-current="page">Главная</a></li>
+          <li><a href="#">Каталог продукции</a></li>
+          <li><a href="#">Подбор программы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Функциональное питание для котов</h1>
+          <p>Занялся собой? Займись котом!</p>
+        </div>
+        <img
+          src="./img/hero-image-mobile.png"
+          alt="Красочная упаковка корма для кошек."
+          width="280"
+          height="270"
+        />
+        <a href="#">Подобрать программу</a>
+      </section>
+      <section class="nutrition-programs">
+        <ul>
+          <li>
+            <h2>Похудение</h2>
+            <img
+              src="./img/cat-slim-mobile.svg"
+              width="36"
+              height="50"
+              alt="Кошка сидит на задних лапах."
+            />
+            <p>
+              Ваш кот весит больше собаки и почти утратил способность лазить по
+              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
+              сбросить лишний вес.
+            </p>
+            <a href="#">Каталог slim</a>
+          </li>
+          <li>
+            <h2>Набор массы</h2>
+            <img
+              src="./img/cat-strong-mobile.svg"
+              width="67"
+              height="28"
+              alt="Кот в движении."
+            />
+            <p>
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+              Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a href="#">Каталог pro</a>
+          </li>
+        </ul>
+      </section>
+      <section class="nutrition-concept">
+        <h2>Как это работает</h2>
+        <ul>
+          <li>
+            <span
+              class="nutrition-concept__point nutrition-concept__point--natural"
+              aria-hidden="true"
+            ></span>
+            Функциональное питание содержит только полезные питательные
+            вещества.
+          </li>
+          <li>
+            <span
+              class="nutrition-concept__point nutrition-concept__point--powdered"
+              aria-hidden="true"
+            ></span>
+            Выпускается в виде порошка, который нужно лишь залить кипятком и
+            готово.
+          </li>
+          <li>
+            <span
+              class="nutrition-concept__point nutrition-concept__point--substituted"
+              aria-hidden="true"
+            ></span>
+            Замените один-два приема обычной еды на наше функциональное питание.
+          </li>
+          <li>
+            <span
+              class="nutrition-concept__point nutrition-concept__point--fast"
+              aria-hidden="true"
+            ></span>
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          </li>
+        </ul>
+      </section>
+      <section class="nutrition-real-life-case">
+        <h2>Живой пример</h2>
+        <p>
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <dl>
+          <dt>снижение веса</dt>
+          <dd>5 кг</dd>
+          <dt>затрачено времени</dt>
+          <dd>60 дней</dd>
+          <dt>Затраты на питание:</dt>
+          <dd>15 000 РУБ.</dd>
+        </dl>
+        <div>
+          <img
+            src="./img/compare-slider-TEMP.png"
+            alt="Результат диеты - было/стало."
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img
+        src="./img/logo-shop-name-mobile.svg"
+        width="101"
+        height="18"
+        alt="Cat energy - интернет-магазин еды для кошек."
+      />
+      <section class="map">
+        <h2>Местоположение на карте</h2>
+        <div>
+          <h3>приглашаемк сотрудничеству дилеров!</h3>
+          <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <img
+          src="./img/map-mobile.png"
+          width="320"
+          height="362"
+          alt="Маркер на карте указывает местоположение магазина."
+        />
+        <img src="./img/map-marker.png" alt="Маркер." aria-hidden="true" />
+      </section>
+      <section class="social">
+        <h2>Контакты в социальных сетях</h2>
+        <ul>
+          <li>
+            <a href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a href="#">Ютуб</a>
+          </li>
+          <li>
+            <a href="#">Телеграм</a>
+          </li>
+        </ul>
+      </section>
+      <section class="developer">
+        <h2>Разрабочик сайта</h2>
+        <p>HTML Academy</p>
+        <img
+          src="./img/htmlacademy.svg"
+          width="27"
+          height="34"
+          alt="HTML Academy - разработчик сайта."
+        />
+      </section>
+    </footer>
+  </body>
+</html>
