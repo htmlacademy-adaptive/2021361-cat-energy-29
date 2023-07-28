@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
+    <style>
+      .nutrition-concept__point {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: #68b738;
+      }
+
+      .nutrition-concept__point::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .nutrition-concept__point--natural::after {
+        background-image: url("./img/icon-leaf.svg");
+      }
+
+      .nutrition-concept__point--powdered::after {
+        background-image: url("./img/icon-cap.svg");
+      }
+
+      .nutrition-concept__point--substituted::after {
+        background-image: url("./img/icon-eat.svg");
+      }
+
+      .nutrition-concept__point--fast::after {
+        background-image: url("./img/icon-clock.svg");
+      }
+    </style>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+    <header>
+      <a href="./index.html" aria-current="page">
+        <img
+          src="./img/logo-mobile.svg"
+          width="33"
+          height="38"
+          alt="Логотип интернет-магазина еды для кошек."
+        />
+      </a>
+      <img
+        src="./img/logo-shop-name-mobile.svg"
+        width="101"
+        height="18"
+        alt="Cat energy - интернет-магазин еды для кошек."
+      />
+      <nav>
+        <ul>
+          <li><a href="./index.html" aria-current="page">Главная</a></li>
+          <li><a href="#">Каталог продукции</a></li>
+          <li><a href="#">Подбор программы</a></li>
+        </ul>
+      </nav>
+    </header>
   </body>
 </html>
