@@ -38,29 +38,42 @@
     </style>
   </head>
   <body>
-    <header>
-      <a href="./index.html" aria-current="page">
-        <img
-          src="./img/logo-mobile.svg"
-          width="33"
-          height="38"
-          alt="Логотип интернет-магазина еды для кошек."
+    <header class="header">
+      <div class="logo-wrapper">
+        <a href="./index.html" aria-current="page"
+          ><img
+            src="./img/logo-mobile.svg"
+            width="33"
+            height="38"
+            alt="Логотип интернет-магазина еды для кошек." /></a
+        ><img
+          src="./img/logo-shop-name-mobile.svg"
+          width="101"
+          height="18"
+          alt="Cat energy - интернет-магазин еды для кошек."
         />
-      </a>
-      <img
-        src="./img/logo-shop-name-mobile.svg"
-        width="101"
-        height="18"
-        alt="Cat energy - интернет-магазин еды для кошек."
-      />
-      <nav>
-        <ul>
-          <li><a href="./index.html" aria-current="page">Главная</a></li>
-          <li><a href="./catalog.html">Каталог продукции</a></li>
-          <li><a href="#">Подбор программы</a></li>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="link--active" href="./index.html" aria-current="page"
+              >Главная</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a class="link" href="./catalog.html" aria-current="false"
+              >Каталог продукции</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a class="link" href="./form.html" aria-current="false"
+              >Подбор программы</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="hero">
         <div>
